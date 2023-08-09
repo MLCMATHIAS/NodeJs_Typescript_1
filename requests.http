@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "mouse",
+  "description":"redragon" ,
+  "price": 1000
+}
+
+###
+GET http://localhost:9000/api/products HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/64c15cc091ebef9c1ede180d HTTP/1.1
+//coloco el id del usuario que quiero buscar.
+###
+DELETE http://localhost:9000/api/users/64c15ca691ebef9c1ede180b HTTP/1.1
+//le pasamos el id
+###
+PUT http://localhost:9000/api/users/6137e2412e329eb206b0073c HTTP/1.1
+Content-Type: application/json
+//le pasamos el id.
+{
+  "name": "teclado",
+  "description":"retroiluminado",
+  "price": 2000
+}
